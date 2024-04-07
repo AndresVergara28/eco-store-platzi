@@ -1,0 +1,344 @@
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    .header__title {
+        color: $verde-fonts;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        font-family: $font-IBM;
+        font-weight: 400;
+    }
+
+    .header__nav {
+        .header__list {
+            display: none;
+        }
+
+        .header__list--mobile {
+            display: flex;
+        }
+
+    }
+}
+
+main {
+
+    .hero-container {
+        width: 100%;
+        padding: 0 2rem;
+
+
+        .hero-container__img {
+            width: 100%;
+            height: auto;
+            border-radius: 1.4rem;
+        }
+
+        .hero-container__description {
+            .hero-container__subtitle {
+                margin-top: 1rem;
+
+                font-family: $font-IBM;
+                font-weight: 600;
+                font-size: 2.8rem;
+                line-height: 36.4px;
+                color: $verde-fonts;
+            }
+
+            .hero-container__parrafo {
+                margin-top: 1rem;
+                font-family: $font-IBM;
+                color: $verde-fonts;
+                font-size: 1.2rem;
+                font-weight: 400;
+                line-height: 1.56rem;
+            }
+
+
+            .hero-container__button {
+                width: 50%;
+                margin: 1rem auto;
+                text-align: center;
+                background-color: $naranja-principal;
+                text-align: center;
+                padding: 1rem;
+                border-radius: 1.2rem;
+
+                .hero-container__ancla {
+                    font-family: $font-IBM;
+                    font-size: 1.4rem;
+                    line-height: 1.8rem;
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    .products-container {
+        width: 100%;
+
+        .products-category-container {
+            margin: 4rem 0;
+
+            .category-container__title {
+                padding: 0 2rem;
+
+                h3 {
+                    font-size: 2.2rem;
+                    font-family: Montserrat;
+                    line-height: 2.682rem;
+                    font-weight: 500;
+                    color: $verde-fonts;
+
+
+                }
+
+            }
+
+            .category-container__products {
+                width: 100%;
+                overflow-x: scroll;
+                display: flex;
+                margin: 2rem 0;
+                padding: 0 2rem;
+                gap: 2rem;
+
+                .products-card {
+                    width: 180px;
+                    min-width: 180px;
+                    height: auto;
+                    background-color: $rosado-principal;
+                    padding: 2rem;
+                    border-radius: 0.4rem;
+
+                    .products-card__img {
+
+                        img {
+                            width: 100%;
+                            height: 170px;
+                            border-radius: 0.4rem;
+
+                        }
+
+
+                    }
+
+                    .products-card__description {
+                        margin-top: 0.4rem;
+                        color: $verde-fonts;
+                        width: 100%;
+
+                        h2 {
+                            font-family: $font-IBM;
+                            font-size: 1.4rem;
+                            font-weight: 600;
+                            line-height: 1.8rem;
+                        }
+
+                        p {
+                            font-size: 0.8rem;
+                            font-weight: 400;
+                            line-height: 1rem;
+                        }
+                    }
+                }
+
+                .products-card--backgroundVerde {
+                    background-color: $verde-principal;
+
+                    .products-card__description {
+                        color: white;
+                    }
+                }
+
+
+            }
+        }
+
+
+    }
+
+    .aboutUs-container {
+        width: 100%;
+        padding: 0 2rem;
+
+        .aboutUs-container__title {
+            width: 100%;
+
+            h2 {
+                font-family: 'Montserrat';
+                color: $verde-fonts ;
+                font-size: 2.2rem;
+                font-weight: 500;
+                line-height: 2.86rem;
+            }
+        }
+
+        .aboutUs-container__explanation {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            margin: 5rem 0;
+
+
+
+            .reason-card-container {
+                width: 80%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .reason-card-container__img {
+                    img {
+                        width: 7rem;
+                    }
+                }
+
+                .reason-card-container__description {
+                    min-width: 160px;
+                    width: 50%;
+
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 1.8rem;
+                        font-family: $font-IBM;
+                        font-weight: 500;
+                        text-align: center;
+                        color: $naranja-fonts;
+                    }
+
+                }
+            }
+
+
+        }
+    }
+
+    .info-container {
+        width: 100%;
+        padding: 0 2rem;
+
+        .info-container__title {
+            h2 {
+                font-size: 2.2rem;
+                font-family: $font-IBM;
+                line-height: 2.86rem;
+                font-weight: 500;
+                color: $verde-fonts;
+            }
+        }
+
+        .info-container__cards-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 2rem 0 4rem 0;
+            gap: 4rem;
+
+            .galery-card {
+
+                width: 220px;
+                margin: 0 auto;
+
+                img {
+                    border-radius: 1.2rem;
+                    width: 100%;
+                    height: 220px;
+                }
+            }
+        }
+    }
+
+    .encuentranos-container {
+        width: 100%;
+        padding: 0 2rem;
+
+        .encuentranos-container__title {
+            width: 100%;
+
+            h2 {
+                font-size: 2.2rem;
+                font-family: $font-IBM;
+                line-height: 2.86rem;
+                font-weight: 500;
+                color: $verde-fonts;
+            }
+        }
+
+        .encuentranos-container__map{
+            width: 100%;
+            margin: 3rem 0 4rem 0 ;
+
+            iframe{
+                width: 100%;
+                border-radius: 1.2rem;
+                border: none;
+            }
+
+            .encuentranos-container__map-aditional-information{
+                p{
+                    font-size: 1.2rem;
+                    font-family: $font-IBM;
+                    line-height: 1.86rem;
+                    font-weight: 500;
+                    color: $verde-fonts;
+                }
+
+            }
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+    background-color: $naranja-principal    ;
+
+    .footer__title{
+        font-size: 2.2rem;
+        font-family: $font-IBM;
+        line-height: 2.86rem;
+        font-weight: 500;
+        color: white;
+    }
+
+    .footer__navigation-bar{
+        .footer__navigation-bar__item{
+            a{
+                font-size: 1rem;
+                color: white;
+                font-weight: lighter;
+                line-height: 1.2rem;
+            }
+        }
+
+       
+
+    }
+    
+    .footer__media-container{
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        gap: 1rem;
+
+        .media-container__icon{
+            cursor: pointer;
+            img{
+                width: 2.4rem;
+            }
+        }
+    }
+
+
+}

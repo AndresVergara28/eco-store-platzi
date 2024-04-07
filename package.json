@@ -1,0 +1,11 @@
+{
+  "name": "ecostore-sasscourse",
+  "version": "1.0.0",
+  "description": "Proyecto Ecologico",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrés Vergara <pipevergara28@hotmail.com>",
+  "license": "MIT"
+}

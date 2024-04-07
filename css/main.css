@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  background-color: #FFEFE7;
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* VARIABLES COLORES */
+header {
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+header .header__title {
+  color: #7C6A0A;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  font-family: "IBM Plex Sans";
+  font-weight: 400;
+}
+header .header__nav .header__list {
+  display: none;
+}
+header .header__nav .header__list--mobile {
+  display: flex;
+}
+
+main .hero-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+main .hero-container .hero-container__img {
+  width: 100%;
+  height: auto;
+  border-radius: 1.4rem;
+}
+main .hero-container .hero-container__description .hero-container__subtitle {
+  margin-top: 1rem;
+  font-family: "IBM Plex Sans";
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 36.4px;
+  color: #7C6A0A;
+}
+main .hero-container .hero-container__description .hero-container__parrafo {
+  margin-top: 1rem;
+  font-family: "IBM Plex Sans";
+  color: #7C6A0A;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+}
+main .hero-container .hero-container__description .hero-container__button {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
+  background-color: #FA9500;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1.2rem;
+}
+main .hero-container .hero-container__description .hero-container__button .hero-container__ancla {
+  font-family: "IBM Plex Sans";
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: white;
+}
+main .products-container {
+  width: 100%;
+}
+main .products-container .products-category-container {
+  margin: 4rem 0;
+}
+main .products-container .products-category-container .category-container__title {
+  padding: 0 2rem;
+}
+main .products-container .products-category-container .category-container__title h3 {
+  font-size: 2.2rem;
+  font-family: Montserrat;
+  line-height: 2.682rem;
+  font-weight: 500;
+  color: #7C6A0A;
+}
+main .products-container .products-category-container .category-container__products {
+  width: 100%;
+  overflow-x: scroll;
+  display: flex;
+  margin: 2rem 0;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+main .products-container .products-category-container .category-container__products .products-card {
+  width: 180px;
+  min-width: 180px;
+  height: auto;
+  background-color: #FFDAC6;
+  padding: 2rem;
+  border-radius: 0.4rem;
+}
+main .products-container .products-category-container .category-container__products .products-card .products-card__img img {
+  width: 100%;
+  height: 170px;
+  border-radius: 0.4rem;
+}
+main .products-container .products-category-container .category-container__products .products-card .products-card__description {
+  margin-top: 0.4rem;
+  color: #7C6A0A;
+  width: 100%;
+}
+main .products-container .products-category-container .category-container__products .products-card .products-card__description h2 {
+  font-family: "IBM Plex Sans";
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+}
+main .products-container .products-category-container .category-container__products .products-card .products-card__description p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+main .products-container .products-category-container .category-container__products .products-card--backgroundVerde {
+  background-color: #BABD8D;
+}
+main .products-container .products-category-container .category-container__products .products-card--backgroundVerde .products-card__description {
+  color: white;
+}
+main .aboutUs-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+main .aboutUs-container .aboutUs-container__title {
+  width: 100%;
+}
+main .aboutUs-container .aboutUs-container__title h2 {
+  font-family: "Montserrat";
+  color: #7C6A0A;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.86rem;
+}
+main .aboutUs-container .aboutUs-container__explanation {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+main .aboutUs-container .aboutUs-container__explanation .reason-card-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .aboutUs-container .aboutUs-container__explanation .reason-card-container .reason-card-container__img img {
+  width: 7rem;
+}
+main .aboutUs-container .aboutUs-container__explanation .reason-card-container .reason-card-container__description {
+  min-width: 160px;
+  width: 50%;
+}
+main .aboutUs-container .aboutUs-container__explanation .reason-card-container .reason-card-container__description p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-family: "IBM Plex Sans";
+  font-weight: 500;
+  text-align: center;
+  color: #E86424;
+}
+main .info-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+main .info-container .info-container__title h2 {
+  font-size: 2.2rem;
+  font-family: "IBM Plex Sans";
+  line-height: 2.86rem;
+  font-weight: 500;
+  color: #7C6A0A;
+}
+main .info-container .info-container__cards-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 4rem 0;
+  gap: 4rem;
+}
+main .info-container .info-container__cards-container .galery-card {
+  width: 220px;
+  margin: 0 auto;
+}
+main .info-container .info-container__cards-container .galery-card img {
+  border-radius: 1.2rem;
+  width: 100%;
+  height: 220px;
+}
+main .encuentranos-container {
+  width: 100%;
+  padding: 0 2rem;
+}
+main .encuentranos-container .encuentranos-container__title {
+  width: 100%;
+}
+main .encuentranos-container .encuentranos-container__title h2 {
+  font-size: 2.2rem;
+  font-family: "IBM Plex Sans";
+  line-height: 2.86rem;
+  font-weight: 500;
+  color: #7C6A0A;
+}
+main .encuentranos-container .encuentranos-container__map {
+  width: 100%;
+  margin: 3rem 0 4rem 0;
+}
+main .encuentranos-container .encuentranos-container__map iframe {
+  width: 100%;
+  border-radius: 1.2rem;
+  border: none;
+}
+main .encuentranos-container .encuentranos-container__map .encuentranos-container__map-aditional-information p {
+  font-size: 1.2rem;
+  font-family: "IBM Plex Sans";
+  line-height: 1.86rem;
+  font-weight: 500;
+  color: #7C6A0A;
+}
+
+footer {
+  width: 100%;
+  padding: 2rem;
+  height: auto;
+  background-color: #FA9500;
+}
+footer .footer__title {
+  font-size: 2.2rem;
+  font-family: "IBM Plex Sans";
+  line-height: 2.86rem;
+  font-weight: 500;
+  color: white;
+}
+footer .footer__navigation-bar .footer__navigation-bar__item a {
+  font-size: 1rem;
+  color: white;
+  font-weight: lighter;
+  line-height: 1.2rem;
+}
+footer .footer__media-container {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+footer .footer__media-container .media-container__icon {
+  cursor: pointer;
+}
+footer .footer__media-container .media-container__icon img {
+  width: 2.4rem;
+}
+
+/*# sourceMappingURL=main.css.map */
